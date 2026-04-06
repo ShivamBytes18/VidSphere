@@ -1,4 +1,4 @@
-#  UTube – Full Stack Video Sharing Platform
+#  VidSphere – FullStack Video Sharing Platform
 
 A full-stack YouTube-like application built with the **MERN stack** that supports video uploads, authentication, subscriptions, likes, and watch history — designed with production-level architecture and modern UI.
 
