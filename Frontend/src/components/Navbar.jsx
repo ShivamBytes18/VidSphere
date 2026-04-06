@@ -34,7 +34,7 @@ export default function Navbar() {
       className="text-2xl font-bold cursor-pointer transition hover:text-red-500"
         onClick={() => navigate("/")}
      >
-        Utube
+        VidSphere
      </h1>
 
       {/* RIGHT SIDE */}
