@@ -49,12 +49,12 @@ export default function Sidebar() {
 
   const menu = [
     { name: "Home 🏠", path: "/" },
-    { name: "Upload", path: "/upload" },
-    { name: "My Videos", path: "/my-videos" },
-    { name: "History", path: "/history" },
-    { name: "Subscriptions", path: "/subscriptions" },
-    { name: "Profile", path: "/profile" },
-     { name: "Settings", path: "/settings" }
+    { name: "Upload 🎬", path: "/upload" },
+    { name: "My Videos 🎥", path: "/my-videos" },
+    { name: "History 📜", path: "/history" },
+    { name: "Subscriptions 🔔", path: "/subscriptions" },
+    { name: "Profile 👤", path: "/profile" },
+     { name: "Settings ⚙️", path: "/settings" }
   ];
 
   return (
