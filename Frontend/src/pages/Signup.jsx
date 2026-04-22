@@ -181,7 +181,7 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-black via-gray-900 to-black p-4">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-black via-gray-900 to-black p-4 rounded-2xl">
 
       {/* 🔥 CARD */}
       <div className="bg-gray-900/80 backdrop-blur-md p-8 rounded-2xl w-full max-w-md flex flex-col gap-4 shadow-2xl border border-gray-800">

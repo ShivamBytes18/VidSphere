@@ -368,12 +368,12 @@ export default function Watch() {
           </h2>
 
           {/* ADD COMMENT */}
-          <div className="flex gap-3 mb-5">
+          <div className="flex gap-3 mb-5 bg-slate-950">
             <input
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Add a comment..."
-              className="flex-1 input"
+              className="flex-1 input bg-slate-800"
             />
             <button onClick={handleComment} className="btn-primary">
               Post
@@ -400,7 +400,7 @@ export default function Watch() {
                     </p>
 
                     {/* REPLY BOX */}
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-2 ">
                       <input
                         value={replyText[c._id] || ""}
                         onChange={(e) =>
@@ -410,7 +410,7 @@ export default function Watch() {
                           })
                         }
                         placeholder="Reply..."
-                        className="input text-sm"
+                        className="input text-sm bg-slate-800"
                       />
 
                       <button
