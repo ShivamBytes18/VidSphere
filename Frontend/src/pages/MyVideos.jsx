@@ -40,7 +40,7 @@ export default function MyVideos() {
           {/* DELETE */}
           <button
             onClick={() => handleDelete(v._id)}
-            className="bg-red-500 px-3 py-1 rounded"
+            className="bg-red-600 px-3 py-1 rounded"
           >
             Delete
           </button>
