@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:8000/api/v1",
+  baseURL: "https://vidsphere-oj07.onrender.com/api/v1",
   withCredentials: true,
 });
