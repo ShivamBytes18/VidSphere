@@ -1,4 +1,4 @@
-#  VidSphere – FullStack Video Sharing Platform
+<!-- #  VidSphere – FullStack Video Sharing Platform
 
 A full-stack YouTube-like application built with the **MERN stack** that supports video uploads, authentication, subscriptions, likes, and watch history — designed with production-level architecture and modern UI.
 
@@ -230,4 +230,186 @@ Full Stack Developer with Ai Integration
 
 ---
 
- If you like this project, give it a star on GitHub!
+ If you like this project, give it a star on GitHub! -->
+
+
+# 🎥 VidSphere
+
+VidSphere is a full-stack video sharing platform inspired by YouTube, built using the MERN stack. Users can create an account, upload videos with thumbnails, watch videos, manage their own content, like videos, and view watch history.
+
+---
+
+## 🚀 Live Demo
+
+### 🌐 Frontend
+https://vidsphere-front.onrender.com
+
+### ⚙️ Backend API
+https://vidsphere-oj07.onrender.com/api/v1
+
+---
+
+## ✨ Features
+
+- 🔐 JWT Authentication (Access & Refresh Tokens)
+- 👤 User Registration & Login
+- 📤 Video Upload with Thumbnail
+- ☁️ Cloudinary Integration
+- 📺 Watch Videos
+- ❤️ Like / Unlike Videos
+- 🕒 Watch History
+- 👤 User Profile
+- 🎬 My Videos
+- 🎯 Random Recommended Videos
+- 📱 Responsive UI
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- React Router
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer
+- Cloudinary
+
+---
+
+## 📂 Project Structure
+
+```
+VidSphere
+│
+├── Frontend
+│   ├── src
+│   ├── components
+│   ├── pages
+│   └── api
+│
+├── Backend
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middlewares
+│   ├── utils
+│   └── db
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/VidSphere.git
+cd VidSphere
+```
+
+### Backend
+
+```bash
+cd Backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env)
+
+```env
+PORT=8000
+MONGODB_URI=YOUR_MONGODB_URI
+
+ACCESS_TOKEN_SECRET=YOUR_ACCESS_SECRET
+REFRESH_TOKEN_SECRET=YOUR_REFRESH_SECRET
+
+ACCESS_TOKEN_EXPIRY=1d
+REFRESH_TOKEN_EXPIRY=10d
+
+CLOUDINARY_CLOUD_NAME=YOUR_CLOUD_NAME
+CLOUDINARY_API_KEY=YOUR_API_KEY
+CLOUDINARY_API_SECRET=YOUR_API_SECRET
+
+CORS_ORIGIN=http://localhost:5173
+```
+
+---
+
+## 📡 API Base URL
+
+```
+https://vidsphere-oj07.onrender.com/api/v1
+```
+
+Example:
+
+```
+POST /users/login
+POST /users/register
+POST /videos/upload
+GET  /videos
+GET  /videos/my-videos
+```
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of:
+- Home Page
+- Login
+- Signup
+- Upload Video
+- Watch Page
+- Profile
+
+---
+
+## 🚀 Deployment
+
+**Frontend**
+
+https://vidsphere-front.onrender.com
+
+**Backend**
+
+https://vidsphere-oj07.onrender.com/api/v1
+
+---
+
+## 👨‍💻 Author
+
+**Shivam Upadhyay**
+
+GitHub: https://github.com/ShivamBytes18
+
+LinkedIn: https://www.linkedin.com/in/shivam-upadhyay-0811182aa
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
