@@ -41,16 +41,23 @@ export default function Navbar() {
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("user"))
   );
-
 useEffect(() => {
   const checkUser = async () => {
     try {
       const res = await API.get("/users/current-user");
+
+      console.log("✅ CURRENT USER:", res.data);
+
       localStorage.setItem("user", JSON.stringify(res.data.data));
       setUser(res.data.data);
     } catch (err) {
-      localStorage.removeItem("user");
-      setUser(null);
+      console.log("❌ CURRENT USER ERROR");
+      console.log("Status:", err.response?.status);
+      console.log("Response:", err.response?.data);
+
+      // Don't remove user yet while debugging
+      // localStorage.removeItem("user");
+      // setUser(null);
     }
   };
 
