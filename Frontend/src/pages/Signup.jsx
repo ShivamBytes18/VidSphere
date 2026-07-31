@@ -133,6 +133,7 @@
 import { useState } from "react";
 import { API } from "../api/axios.js";
 import { useNavigate } from "react-router-dom";
+import Home from "./Home.jsx";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -172,7 +173,7 @@ export default function Signup() {
       console.log(res);
 
       alert("Signup successful 🚀");
-      navigate("/login");
+      navigate("/Home");
 
     } catch (err) {
       console.log(err);
