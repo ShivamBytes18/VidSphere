@@ -173,7 +173,7 @@ export default function Signup() {
       console.log(res);
 
       alert("Signup successful 🚀");
-      navigate("/Home");
+      navigate("/login");
 
     } catch (err) {
       console.log(err);
