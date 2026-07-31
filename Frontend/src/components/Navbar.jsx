@@ -1,23 +1,73 @@
 
+// import { useNavigate } from "react-router-dom";
+// import { API } from "../api/axios.js";
+// import { useEffect } from "react";
+// export default function Navbar() {
+//   const navigate = useNavigate();
+
+//  // const user = JSON.parse(localStorage.getItem("user"));
+
+//  useEffect(() => {
+//   API.get("/users/current-user")
+//     .then((res) => {
+//       localStorage.setItem("user", JSON.stringify(res.data.data));
+//     })
+//     .catch(() => {
+//       localStorage.removeItem("user");
+//     });
+// }, []);
+
+//   const handleLogout = async () => {
+//     try {
+//       await API.post("/users/logout");
+
+//       localStorage.removeItem("user"); // 🔥 remove user
+
+//       navigate("/login"); // 🔥 redirect
+//     } catch (err) {
+//       console.log("Logout error 👉", err);
+//     }
+//   };
+
+
+
 import { useNavigate } from "react-router-dom";
 import { API } from "../api/axios.js";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const navigate = useNavigate();
 
-  const user = JSON.parse(localStorage.getItem("user"));
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user"))
+  );
 
+useEffect(() => {
+  const checkUser = async () => {
+    try {
+      const res = await API.get("/users/current-user");
+      localStorage.setItem("user", JSON.stringify(res.data.data));
+      setUser(res.data.data);
+    } catch (err) {
+      localStorage.removeItem("user");
+      setUser(null);
+    }
+  };
+
+  checkUser();
+}, []);
   const handleLogout = async () => {
     try {
       await API.post("/users/logout");
-
-      localStorage.removeItem("user"); // 🔥 remove user
-
-      navigate("/login"); // 🔥 redirect
     } catch (err) {
       console.log("Logout error 👉", err);
+    } finally {
+      localStorage.removeItem("user");
+      setUser(null);
+      navigate("/login");
     }
   };
+
 
   return (
     <div className="flex justify-between items-center p-4 bg-black text-white">
